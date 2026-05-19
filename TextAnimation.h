@@ -1,10 +1,9 @@
 #pragma once
 #include <string>
-using std::string;
 
 class TextAnimation {
   public:
-    string message;
-    TextAnimation(string msg);
+    std::string message_;
+    TextAnimation(std::string message);
     void printMessage();
 };
