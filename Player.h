@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Enemy.h"
 
 class Player {
  public:
@@ -11,4 +12,6 @@ class Player {
   Player(std::string name, std::string race, int health, int age, int attackPower);
 };
 
-void attackNow();
+void takeDamage(int damage);
+
+void attackNow(Enemy& enemy);
