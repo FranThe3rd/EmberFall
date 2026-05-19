@@ -10,8 +10,9 @@ class Player {
   int age_;
   int attackPower_;
   Player(std::string name, std::string race, int health, int age, int attackPower);
-};
 
 void takeDamage(int damage);
 
 void attackNow(Enemy& enemy);
+
+};

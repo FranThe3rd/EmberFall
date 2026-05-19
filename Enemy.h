@@ -9,8 +9,9 @@ class Enemy {
   int health_;
   int attackPower_;
   Enemy(std::string name,  int health, int attackPower);
-};
 
 void attackPlayer(Player& player);
 
 void takeDamage(int damage);
+
+};
