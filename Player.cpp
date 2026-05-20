@@ -12,3 +12,5 @@ void Player::attackNow(Enemy& enemy) {
 void Player::takeDamage(int damage) {
   health_ -= damage;
 }
+
+

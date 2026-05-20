@@ -15,4 +15,6 @@ void takeDamage(int damage);
 
 void attackNow(Enemy& enemy);
 
+void heal(int amount);
+
 };
