@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
-#include "Enemy.h"
+
+class Enemy;
 
 class Player {
  public:
@@ -11,10 +12,7 @@ class Player {
   int attackPower_;
   Player(std::string name, std::string race, int health, int age, int attackPower);
 
-void takeDamage(int damage);
-
-void attackNow(Enemy& enemy);
-
-void heal(int amount);
-
+  void takeDamage(int damage);
+  void attackNow(Enemy& enemy);
+  void heal(int amount);
 };

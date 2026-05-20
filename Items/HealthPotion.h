@@ -2,11 +2,8 @@
 #include <string>
 #include "../Item.h"
 
-
-class HealthPotion:Item {
-
-  public:
-    std::string name_;
-    HealthPotion(int healAmount);
-    void Item::use (Player& player) override;
+class HealthPotion : public Item {
+ public:
+  HealthPotion(int healAmount);
+  void use(Player& player) override;
 };

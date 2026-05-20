@@ -1,14 +1,14 @@
 #include "Enemy.h"
+#include "Player.h"
 #include <string>
 
-Enemy::Enemy(std::string name,  int health, int attackPower): name_{name}, health_{health},attackPower_{attackPower} {};
+Enemy::Enemy(std::string name, int health, int attackPower)
+    : name_{name}, health_{health}, attackPower_{attackPower} {}
 
 void Enemy::attackPlayer(Player& player) {
-    player.takeDamage(attackPower_);
+  player.takeDamage(attackPower_);
 }
 
-void takeDamage(int damage) {
+void Enemy::takeDamage(int damage) {
   health_ -= damage;
 }
-
-
