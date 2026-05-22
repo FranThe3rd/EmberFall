@@ -2,6 +2,7 @@
 #include <string>
 
 class Enemy;
+class Weapon;
 
 class Player {
  public:
@@ -9,8 +10,8 @@ class Player {
   std::string race_;
   int health_;
   int age_;
-  int attackPower_;
-  Player(std::string name, std::string race, int health, int age, int attackPower);
+  Weapon weapon_;
+  Player(std::string name, std::string race, int health, int age, Weapon weapon);
 
   void takeDamage(int damage);
   void attackNow(Enemy& enemy);

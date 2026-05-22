@@ -1,12 +1,13 @@
 #include "Player.h"
 #include "Enemy.h"
+#include "Weapon"
 #include <string>
 
-Player::Player(std::string name, std::string race, int health, int age, int attackPower)
-    : name_{name}, race_{race}, health_{health}, age_{age}, attackPower_{attackPower} {}
+Player::Player(std::string name, std::string race, int health, int age, Weapon weapon)
+    : name_{name}, race_{race}, health_{health}, age_{age}, weapon_{weapon_} {};
 
 void Player::attackNow(Enemy& enemy) {
-  enemy.takeDamage(attackPower_);
+  enemy.takeDamage(weapon.attackPower_);
 }
 
 void Player::takeDamage(int damage) {
