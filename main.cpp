@@ -2,31 +2,34 @@
 #include <string>
 #include "TextAnimation.h"
 /*
-Game/
-├── main.cpp
-├── Player.h / Player.cpp
-├── Enemy.h / Enemy.cpp
-├── Game.h / Game.cpp
-├── Item.h / Item.cpp
-├── Inventory.h / Inventory.cpp
-├── Combat.h / Combat.cpp
-*/
+   Game/
+   ├── main.cpp
+   ├── Player.h / Player.cpp
+   ├── Enemy.h / Enemy.cpp
+   ├── Game.h / Game.cpp
+   ├── Item.h / Item.cpp
+   ├── Inventory.h / Inventory.cpp
+   ├── Combat.h / Combat.cpp
+   */
 
 int main() {
-std::string introStory = R"(Welcome to the land of emberfall, where all of the goyims come to destroy your world. With the power
-  of burger king and goyslop on yourside, you must find a way to defend yourself from the monsters of destruction)";
-std::string welcomeScreen = R"(
+  std::string introStory = R"(There was once peace, in the world of the embers, but once the war of the great falling
+  began, you had no choice and had to fight since you were already included in the draft because of the FAFSA applications.
+  Thankfully in this world guns and drone strikes don't exist, so in this world you have no choice but to only fight with 
+  basic man made weapons. Choose your weapon soldier...)";
+  std::string welcomeScreen = R"(
 ___________      ___.                 ___________      .__  .__   
 \_   _____/ _____\_ |__   ___________  \_   _____/____  |  | |  |  
  |    __)_ /     \| __ \_/ __ \_  __ \  |    __) \__  \ |  | |  |  
  |        \  Y Y  \ \_\ \  ___/|  | \/  |     \   / __ \|  |_|  |__
 /_______  /__|_|  /___  /\___  >__|     \___  /  (____  /____/____/
-        \/      \/    \/     \/             \/        \/           
+        \/      \/    \/     \/             \/        \/
+
     )";
 
 
-std::cout << welcomeScreen;
-TextAnimation textAnimation(introStory);
-textAnimation.printMessage();
-return 0;
+  std::cout << "\n" << welcomeScreen;
+  TextAnimation textAnimation(introStory);
+  textAnimation.printMessage();
+  return 0;
 }
