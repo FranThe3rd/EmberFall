@@ -1,17 +1,15 @@
 #pragma once
-#include <string>
 #include <vector>
+#include "Item.h"
 
-class Item;
 class Player;
 
-
 class Inventory {
-  public:
-    vector<Item> backpack_;
-    Vector(vector<Item> backpack);
-    void showInventory();
-    void useItem(int index, Player& player);
-    void addItem(Item& item);
-    void deleteItem(Item& item);
-}
+ public:
+  std::vector<Item*> backpack_;
+  Inventory(std::vector<Item*> backpack);
+  void showInventory();
+  void useItem(int index, Player& player);
+  void addItem(Item& item);
+  void deleteItem(int index);
+};

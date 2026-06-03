@@ -13,6 +13,8 @@
    */
 
 int main() {
+
+
   std::string introStory = R"(There was once peace, in the world of the embers, but once the war of the great falling
   began, you had no choice and had to fight since you were already included in the draft because of the FAFSA applications.
   Thankfully in this world guns and drone strikes don't exist, so in this world you have no choice but to only fight with 
@@ -31,5 +33,9 @@ ___________      ___.                 ___________      .__  .__
   std::cout << "\n" << welcomeScreen;
   TextAnimation textAnimation(introStory);
   textAnimation.printMessage();
+
+
+
+
   return 0;
 }
