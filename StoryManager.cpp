@@ -14,6 +14,4 @@ StoryManager::StoryManager(
       storyName_{storyName},
       storyLine_{storyline},
       numberEnemies_{numberEnemies},
-      reward_{reward}
-{
-};
+      reward_{reward} {}

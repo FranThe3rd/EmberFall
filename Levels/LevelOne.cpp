@@ -8,4 +8,4 @@ LevelOne::LevelOne(
     int numberEnemies,
     int reward
 )
-    : StoryManager(currentRoom, rooms, storyName, storyline, numberEnemies, reward) {};
+    : StoryManager(currentRoom, rooms, storyName, storyline, numberEnemies, reward) {}
