@@ -2,9 +2,11 @@
 
 
 class GameEngine {
-  public:
+  private:
     bool game_;
-    GameEngine(bool game);
+  public:
+    GameEngine();
+    bool isGameRunning();
     void gameStart();
     void gameEnd();
     

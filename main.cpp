@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "TextAnimation.h"
+#include "Levels/LevelOne.h"
+#include "GameEngine.h"
 /*
    Game/
    ├── main.cpp
@@ -14,11 +16,11 @@
 
 int main() {
 
-
+  // -----------------------------------------------------------------------------------------------------------------------
   std::string introStory = R"(There was once peace, in the world of the embers, but once the war of the great falling
   began, you had no choice and had to fight since you were already included in the draft because of the FAFSA applications.
   Thankfully in this world guns and drone strikes don't exist, so in this world you have no choice but to only fight with 
-  basic man made weapons. Choose your weapon soldier...)";
+  basic man made weapons.)";
   std::string welcomeScreen = R"(
 ___________      ___.                 ___________      .__  .__   
 \_   _____/ _____\_ |__   ___________  \_   _____/____  |  | |  |  
@@ -33,6 +35,19 @@ ___________      ___.                 ___________      .__  .__
   std::cout << "\n" << welcomeScreen;
   TextAnimation textAnimation(introStory);
   textAnimation.printMessage();
+
+  // -----------------------------------------------------------------------------------------------------------------------
+
+
+  /*Initialize Levels*/
+
+  /*Game Engine*/
+
+
+
+
+
+
 
 
 
