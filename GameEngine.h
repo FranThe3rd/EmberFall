@@ -9,5 +9,4 @@ class GameEngine {
     bool isGameRunning();
     void gameStart();
     void gameEnd();
-    
 };

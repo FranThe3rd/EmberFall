@@ -6,6 +6,6 @@
 
 class LevelOne : public StoryManager {
   public:
-    LevelOne(std::string currentRoom, std::unordered_map<std::string, std::unordered_map<std::string, std::string>> rooms, std::string storyName, std::string storyline, int numberEnemies, int reward);
+    LevelOne();
     void displayStory() override; 
 };

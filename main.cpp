@@ -40,8 +40,14 @@ ___________      ___.                 ___________      .__  .__
 
 
   /*Initialize Levels*/
-
+  LevelOne levelOne;
   /*Game Engine*/
+  GameEngine game;
+  game.gameStart();
+
+  while (game.isGameRunning()) {
+  levelOne.displayStory();
+  }
 
 
 
