@@ -1,7 +1,8 @@
 #include "GameEngine.h"
+#include "Player.h"
+#include "StoryManager.h"
 
-
-GameEngine::GameEngine() : game_{false} {};
+GameEngine::GameEngine() : game_{false} {}
     bool  GameEngine::isGameRunning() {
       return game_;
     }
@@ -10,6 +11,15 @@ GameEngine::GameEngine() : game_{false} {};
     }
     void GameEngine::gameEnd() {
       game_ = false;
+    }
+
+    void GameEngine::run() {
+
+      while (isGameRunning()) {
+
+
+      }
+
     }
 
 
